@@ -84,5 +84,5 @@ print ""
 print "Can you belive that?"
 print ""
 
-print "It takes light ~%r light-years to get from Earth to %r" % (ltts, star)     #I removed "only"
+print "It takes light ~%r light-years to get from Earth to %r" % (ltts, star)
 # print "That means light travels %r meters in %r minutes" % (dts, ltts)     
