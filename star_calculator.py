@@ -1,5 +1,5 @@
 #star_calculator
-
+from universe import SPEED_OF_LIGHT, SECONDS_PER_YEAR, distance
 import sys        # to be able to exit the script
 
 # Lets make a dictionary of stars containing star and light travel time to the star (light years)
@@ -32,7 +32,9 @@ if star not in stars:
     print "I don't know this one. Maybe you misspelled it.  Try again!"	      #print info
     star = raw_input("Tell me a Star: ") 			                        
     #ask for new input
-    star = star.lower()								
+    star = star.lower()
+    if star in stars:
+      break
     if i == 5:  						
       print "Try again later!"  			                        #say bye
       sys.exit()						                                         
@@ -40,49 +42,24 @@ if star not in stars:
 
 else:					          # if star is in stars
   pass					        # just continue
-      
-
-sol = 299792458.0
-#speed of light (meter/second)
-
-meter = 3.28084
-#feet
-
-#Time
-#---------------------
-year = 365.0
-second = 60.0				#only year and second are used more times
-
-mid = 24.0 * 60.0		
-#minutes in day
-
-sid = 24.0 * 60.0 * second
-#seconds in day
-
-yis = year * sid
-#year in seconds
-
-yim = year * mid
-#year in minutes
-
-#Distance
-#----------------------
-dlpy = sol * yis
-#distance of light per year (meters)
-
 ltts = stars[star]
-#light's time to sun (years)
+  
+values = (
+  SPEED_OF_LIGHT, 
+  SECONDS_PER_YEAR, 
+  SECONDS_PER_YEAR / 60, 
+  SPEED_OF_LIGHT * SECONDS_PER_YEAR, 
+  ltts, 
+  star, 
+  distance(ltts)
+)
+message  = """The speed of light is %r meters/second.
+There are %r seconds in a year.
+Which equals %r minutes per year.
+Light travels %r meters per year.
 
-dts = sol * ltts * second
-#distance to sun (meters)
+Can you believe that?
 
-print "The speed of light is %r meters/second." % sol
-print "There are %r seconds in a year." % yis
-print "Which equals %r minutes per year." % yim
-print "Light travels %r meters per year." % dlpy
-print ""
-print "Can you belive that?"
-print ""
-
-print "It takes light ~%r light-years to get from Earth to %r" % (ltts, star)
-# print "That means light travels %r meters in %r minutes" % (dts, ltts)     
+It takes light ~%r light-years to get from Earth to %r
+Which is %r meter away from the earth""" % values
+print(message)
