@@ -8,6 +8,15 @@ stars= {
   "proxima centauri": 4.242,
   "alpha centauri" : 4.365,
   "barnard star" : 5.96,
+  "WISE 1049-5319" : 6.52,
+  "wolf 359" : 7.7825,
+  "lalande 21185" : 8.2905,
+  "sirius" : 8.5828,
+  "luyten 726-8" : 8.7280,
+  "ross 154" : 9.6813,
+  "ross 248" : 10.322,
+  
+  
 }
 
 
@@ -75,5 +84,5 @@ print ""
 print "Can you belive that?"
 print ""
 
-print "It takes light %r light-years to get from the %r to Earth" % (ltts, star)     #I removed "only"
-# print "That means light travels %r meters in %r minutes" % (dts, ltts)      #didn't finish the counting, have to go
+print "It takes light ~%r light-years to get from the Earth to %r" % (ltts, star)     #I removed "only"
+# print "That means light travels %r meters in %r minutes" % (dts, ltts)     
