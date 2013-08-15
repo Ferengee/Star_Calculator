@@ -61,5 +61,5 @@ Light travels %r meters per year.
 Can you believe that?
 
 It takes light ~%r light-years to get from Earth to %r
-Which is %r meter away from the earth""" % values
+Which is %r meters away from the earth""" % values
 print(message)
