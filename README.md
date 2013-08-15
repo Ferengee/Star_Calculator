@@ -5,6 +5,7 @@ Star_Calculator
 #This is not intended to be a serious project
 #Use any of these files in anyway that you like
 #Feel free to contribute to this project!
+#Contribute in the python.txt folder!
 
 Calculator for Star Travel
 
