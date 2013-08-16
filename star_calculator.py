@@ -1,5 +1,5 @@
 #star_calculator
-from universe import SPEED_OF_LIGHT, SECONDS_PER_YEAR, distance
+from universe import SPEED_OF_LIGHT, SECONDS_PER_YEAR, MINUTES_PER_YEAR, distance
 import sys        # to be able to exit the script
 
 # Lets make a dictionary of stars containing star and light travel time to the star (light years)
@@ -47,7 +47,7 @@ ltts = stars[star]
 values = (
   SPEED_OF_LIGHT, 
   SECONDS_PER_YEAR, 
-  SECONDS_PER_YEAR / 60, 
+  MINUTES_PER_YEAR, 
   SPEED_OF_LIGHT * SECONDS_PER_YEAR, 
   ltts, 
   star, 
