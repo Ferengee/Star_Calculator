@@ -6,6 +6,8 @@ FEET_PER_METER = 3.28084
 
 SECONDS_PER_YEAR = 365 * 24 * 60 * 60
 
+MINUTES_PER_YEAR = SECONDS_PER_YEAR / 60
+
 def meters_to_feet(meters):
   return FEET_PER_METER * meters
   
