@@ -15,12 +15,22 @@ stars= {
   "luyten 726-8" : 8.7280,
   "ross 154" : 9.6813,
   "ross 248" : 10.322,
+  "WISE 1506+7027" : 10.521,
+  "Epsilon Eridani " : 10.522,
+  "Lacaille 9352 " : 10.742,
+  "Ross 128" : 10.919,
+  "WISE 0350-5658" : 11.208,
+  "EZ Aquarii A" : 11.266,
+  "EZ Aquarii B" : 11.266,
+  "EZ Aquarii C" : 11.266,
+  "Procyon A" : 11.402,
+  "Procyon B" : 11.402,
   
   
 }
 
 
-star = raw_input("Name a Star: ") 
+star = raw_input("Name a Star or System: ") 
 star = star.lower()    #to get rid of capital letters
 
 if star not in stars:    					                                      
